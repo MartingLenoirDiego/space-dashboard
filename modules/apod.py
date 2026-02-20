@@ -9,7 +9,8 @@ def show():
         "Choisir une date",
         value=datetime.date.today(),
         min_value=datetime.date(1995, 6, 16),  # première APOD
-        max_value=datetime.date.today()
+        max_value=datetime.date.today(),
+        key="apod_date"
     )
 
     with st.spinner("Chargement..."):
@@ -23,11 +24,11 @@ def show():
     st.caption(f"📅 {data['date']}")
 
     if data["media_type"] == "image":
-        st.image(data["url"], use_container_width=True)
+        st.image(data["url"], width="stretch")
     elif data["media_type"] == "video":
         st.video(data["url"])
 
-    with st.expander("📖 Explication"):
+    with st.expander("📖 Explication",expanded=False):
         st.write(data["explanation"])
 
     if "copyright" in data:
