@@ -1,5 +1,5 @@
 import streamlit as st
-from modules import apod, iss
+from modules import apod, iss, space_weather
 
 st.set_page_config(
     page_title="Space Dashboard",
@@ -18,4 +18,4 @@ with main:
     elif page == "ISS Tracker":
         iss.show()
     elif page == "Space Weather":
-        st.info("Coming soon ☀️")
+        space_weather.show()

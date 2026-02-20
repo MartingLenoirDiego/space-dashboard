@@ -45,7 +45,7 @@ def show():
 
     with col1:
         st.subheader("Position en temps réel")
-        st.plotly_chart(fig, use_container_width=True)
+        st.plotly_chart(fig, width='stretch')
         metrics = st.columns(2)
         metrics[0].metric("Latitude", f"{position['lat']:.4f}°")
         metrics[1].metric("Longitude", f"{position['lon']:.4f}°")
