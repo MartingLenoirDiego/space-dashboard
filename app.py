@@ -1,6 +1,5 @@
 import streamlit as st
-from modules import apod, iss, space_weather
-
+from modules import apod, iss, space_weather, neo
 st.set_page_config(
     page_title="Space Dashboard",
     page_icon="🚀",
@@ -8,7 +7,7 @@ st.set_page_config(
 )
 
 st.sidebar.title("🚀 Space Dashboard")
-page = st.sidebar.radio("Navigation", ["APOD", "ISS Tracker", "Space Weather"])
+page = st.sidebar.radio("Navigation", ["APOD", "ISS Tracker", "Space Weather","NEO"])
 
 main = st.container()
 
@@ -19,3 +18,5 @@ with main:
         iss.show()
     elif page == "Space Weather":
         space_weather.show()
+    elif page == "NEO":
+        neo.show()
