@@ -3,7 +3,7 @@
 A real-time interactive space data dashboard built with Python and Streamlit, powered by NASA's public APIs.
 
 ## 🌐 Live Demo
-[space-dashboard.streamlit.app](https://your-app-url.streamlit.app) <!-- remplace par ton vrai lien -->
+[space-dashboard.streamlit.app]([https://your-app-url.streamlit.app](https://space-dashboard.streamlit.app/)) 
 
 ## 📸 Features
 
@@ -22,7 +22,7 @@ A real-time interactive space data dashboard built with Python and Streamlit, po
 
 ## 🚀 Run Locally
 ```bash
-git clone https://github.com/ton-username/space-dashboard.git
+git clone https://github.com/MartingLenoirDiego/space-dashboard.git
 cd space-dashboard
 python -m venv venv
 source venv/bin/activate
