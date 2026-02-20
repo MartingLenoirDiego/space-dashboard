@@ -3,7 +3,7 @@
 A real-time interactive space data dashboard built with Python and Streamlit, powered by NASA's public APIs.
 
 ## 🌐 Live Demo
-[space-dashboard.streamlit.app]([https://your-app-url.streamlit.app](https://space-dashboard.streamlit.app)
+https://space-dashboard.streamlit.app
 
 ## 📸 Features
 
